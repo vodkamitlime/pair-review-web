@@ -10,12 +10,12 @@ Codestates SEB 수강생들은 매 sprint/pair programming 가 끝날 때마다 
 ## 팀원 소개
 <table>
     <tr>
-        <td align="center" width="230px" height="160px">
+        <td align="center" width="300px" height="160px">
             <a href="https://github.com/vodkamitlime"><img height="100px" width="100px" src="https://avatars.githubusercontent.com/u/75682050?s=460&u=0988d14e9abb4f0105746182fca76a3c1e61de53&v=4" /></a>
             <br />
             <a href="https://github.com/vodkamitlime">vodkamitlime</a>
         </td>
-        <td align="center" width="130px" height="160px">
+        <td align="center" width="300px" height="160px">
             <a href="https://github.com/bmaner"><img height="100px" width="100px" src="https://avatars.githubusercontent.com/u/78008369?v=4" /></a>
             <br />
             <a href="https://github.com/bmaner">bmaner</a>
