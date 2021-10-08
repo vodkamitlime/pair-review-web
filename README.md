@@ -41,15 +41,15 @@ Codestates SEB 수강생들은 매 sprint/pair programming 가 끝날 때마다 
 <br />
 
 ## 기능 소개
-1. pair review 메일 csv 다운로드
+#### 1.pair review 메일 csv 다운로드
 메일함을 일일이 들어갈 필요 없이 이메일 주소, 비밀번호만 입력하면 한 번에 모든 pair review 메일을 하나의 파일(csv)로 다운받아 볼 수 있습니다.
 <br />
 
-2. 확장자 선택 (작업 중) 
+#### 2. 확장자 선택 (작업 중) 
 pdf, csv, xls 등 원하는 확장자를 선택해 다운받을 수 있습니다.
 <br />
 
-3. 기간 선택 (작업 중)
+#### 3. 기간 선택 (작업 중)
 선택한 기간에 해당하는 pair review 메일만 다운받을 수 있습니다.
 <br />
 
