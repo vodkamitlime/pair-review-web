@@ -34,7 +34,7 @@ Codestates SEB 수강생들은 매 sprint/pair programming 가 끝날 때마다 
 			<a>python 으로 csv 파일 저장 기능을 구현하였으며, FastAPI 로 웹서비스의 서버를 구현했습니다.</a>
 		</td>
 	    <td align="center">
-	        <a>React.js 와 Styled Components 로 웹서비스의 프론트엔드를 구현했습니다.</a>
+	        <a>React.js로 웹서비스의 프론트엔드를 구현했습니다.</a>
 	    </td>
     </tr>
 </table>
