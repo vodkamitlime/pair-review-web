@@ -53,10 +53,16 @@ pdf, csv, xls 등 원하는 확장자를 선택해 다운받을 수 있습니다
 선택한 기간에 해당하는 pair review 메일만 다운받을 수 있습니다.
 <br />
 
+## 주의사항
+- 2021년 10월 10일 현재, 접근 가능한 이메일 도메인은 gmail 입니다. 
+<br />
+<br />
+
 -----------
 
 ## Client
 작성중
+<br />
 
 ## Server
 1. pip install fastapi
