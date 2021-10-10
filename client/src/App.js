@@ -1,13 +1,14 @@
-import { Switch, Route } from "react-router-dom";
 import Header from "../src/components/common/Header";
 import Carousel from "./components/slidersection/Carousel";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Header />
       <Carousel />
-      <Switch> </Switch>
+      <div className="startbutton">
+        <div className="text">Start Now</div>
+      </div>
     </div>
   );
 }
