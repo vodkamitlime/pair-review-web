@@ -1,5 +1,6 @@
 import Header from "../src/components/common/Header";
 import Carousel from "./components/slidersection/Carousel";
+import About from "./components/aboutsection/About";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <div className="startbutton">
         <div className="text">Start Now</div>
       </div>
+      <About />
     </div>
   );
 }
