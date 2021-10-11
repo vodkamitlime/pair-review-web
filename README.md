@@ -67,5 +67,6 @@ pdf, csv, xls 등 원하는 확장자를 선택해 다운받을 수 있습니다
 ## Server
 1. pip install fastapi
 2. pip install uvicorn[standard]
+3. pip install aiofiles
 To run server:
-3. uvicorn main:app —reload
+4. uvicorn main:app —-reload

@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.responses import FileResponse
 from pydantic import BaseModel
 from downloads import download_emails
 
@@ -16,4 +17,4 @@ class User(BaseModel):
 @app.post("/download")
 async def download_file(user: User):
     download_emails(user.email, user.password, user.extension)
-    return {"message": "Downloaded emails"}
+    return FileResponse(path=f'./public/{user.email}.csv', filename='pair_review.csv', media_type='application/csv')
