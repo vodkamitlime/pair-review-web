@@ -4,7 +4,8 @@ import imaplib, re, csv, email, html, os
 
 def download_emails(req_email: str, req_pass: str, req_ext: str): 
     
-    f = open('pair_feedback.csv', 'w', newline='')
+    filepath = f'./public/{req_email}.csv'
+    f = open(filepath, 'w', newline='')
     write = csv.writer(f)
     write.writerow(['#', '날짜', '페어', '스프린트', '잘한 점', '개선할 점'])
 
@@ -19,9 +20,9 @@ def download_emails(req_email: str, req_pass: str, req_ext: str):
     status, messages = imap.uid('search', None, '(FROM "notifications@typeform.com")')
     messages = messages[0].split()
 
-    for n, message in enumerate(messages):
+    print("File downloading..")
 
-        print(f"Writing email #{n} on file...")
+    for n, message in enumerate(messages):
 
         res, msg = imap.uid('fetch', message, "(RFC822)") 
         raw = msg[0][1]
@@ -68,7 +69,7 @@ def download_emails(req_email: str, req_pass: str, req_ext: str):
 
             write.writerow([n, date, pair, sprint, awesome, improve])
 
-    print("All complete!")
+    print("File download success")
     f.close()
     imap.close()
     imap.logout()
