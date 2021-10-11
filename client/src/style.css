@@ -560,4 +560,24 @@ select::-ms-expand {
   left: 2%;
   top: 50%; }
 
+.aboutcontainer {
+  margin-top: 100px; }
+  .aboutcontainer .subject {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 60px; }
+  .aboutcontainer .body {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .aboutcontainer .body .contentswrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .aboutcontainer .body .contentswrapper .desc {
+        width: 350px; }
+      .aboutcontainer .body .contentswrapper img {
+        width: 350px; }
+
 /*# sourceMappingURL=style.css.map */
