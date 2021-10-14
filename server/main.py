@@ -16,7 +16,7 @@ class User(BaseModel):
 
 @app.post("/download")
 def download_file(user: User, background_tasks: BackgroundTasks):
-    # background_tasks.add_task()
+    background_tasks.add_task()
     download_emails(user.email, user.password, user.extension)
     return {'hello':'world'}
     # return FileResponse(path=f'./public/{user.email}.csv', filename='pair_review.csv', media_type='application/csv')
