@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, BackgroundTasks
 from fastapi.responses import FileResponse
 from pydantic import BaseModel
 from downloads import download_emails
@@ -15,6 +15,8 @@ class User(BaseModel):
     extension: str
 
 @app.post("/download")
-async def download_file(user: User):
+def download_file(user: User, background_tasks: BackgroundTasks):
+    background_tasks.add_task()
     download_emails(user.email, user.password, user.extension)
-    return FileResponse(path=f'./public/{user.email}.csv', filename='pair_review.csv', media_type='application/csv')
+    return {'hello':'world'}
+    # return FileResponse(path=f'./public/{user.email}.csv', filename='pair_review.csv', media_type='application/csv')
