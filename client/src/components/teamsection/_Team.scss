@@ -1,0 +1,42 @@
+.fixposition {
+  width: 100%;
+  margin-top: 100px;
+  padding: 0 100px;
+  @include flexbox;
+  .teamcontainer {
+    width: 1071px;
+    h2 {
+      font-style: italic;
+      font-size: 40px;
+      color: $black;
+    }
+
+    .wrappers {
+      @include flexbox;
+      justify-content: space-around;
+      //   width: 100;
+      .teamwrapper {
+        @include column-flexbox;
+        margin-top: 30px;
+        img {
+          width: 350px;
+          border-radius: 50%;
+        }
+        .desc {
+          width: 350px;
+          h3 {
+            font-size: 25px;
+          }
+
+          .channel {
+          }
+
+          p {
+            margin-top: 50px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
