@@ -1,6 +1,6 @@
 import Header from "../src/components/common/Header";
 import Carousel from "./components/slidersection/Carousel";
-import About from "./components/aboutsection/About";
+import About from "./components/aboutproject/About";
 
 function App() {
   return (

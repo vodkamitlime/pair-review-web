@@ -1,0 +1,34 @@
+.fixposition {
+  width: 100%;
+  margin-top: 100px;
+  padding: 0 100px;
+  @include flexbox;
+  .aboutcontainer {
+    width: 1071px;
+    h2 {
+      font-style: italic;
+      font-size: 40px;
+      color: $black;
+    }
+
+    .aboutwrapper {
+      margin-top: 21px;
+      display: flex;
+      max-width: 864px;
+      justify-content: space-between;
+      .text {
+        width: 350px;
+        h3 {
+          font-size: 25px;
+        }
+
+        p {
+          margin-top: 21px;
+          font-size: 20px;
+        }
+      }
+      img {
+      }
+    }
+  }
+}
