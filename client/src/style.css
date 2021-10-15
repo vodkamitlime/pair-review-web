@@ -573,17 +573,57 @@ select::-ms-expand {
       font-style: italic;
       font-size: 40px;
       color: #333333; }
-    .fixposition .aboutcontainer .aboutwrapper {
-      margin-top: 21px;
+    .fixposition .aboutcontainer .wrappers {
       display: flex;
-      max-width: 864px;
-      justify-content: space-between; }
-      .fixposition .aboutcontainer .aboutwrapper .text {
-        width: 350px; }
-        .fixposition .aboutcontainer .aboutwrapper .text h3 {
-          font-size: 25px; }
-        .fixposition .aboutcontainer .aboutwrapper .text p {
-          margin-top: 21px;
-          font-size: 20px; }
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .fixposition .aboutcontainer .wrappers .aboutwrapper {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        width: 864px; }
+        .fixposition .aboutcontainer .wrappers .aboutwrapper .text {
+          width: 350px; }
+          .fixposition .aboutcontainer .wrappers .aboutwrapper .text h3 {
+            font-size: 25px; }
+          .fixposition .aboutcontainer .wrappers .aboutwrapper .text p {
+            margin-top: 50px;
+            font-size: 20px; }
+
+.fixposition {
+  width: 100%;
+  margin-top: 100px;
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .fixposition .teamcontainer {
+    width: 1071px; }
+    .fixposition .teamcontainer h2 {
+      font-style: italic;
+      font-size: 40px;
+      color: #333333; }
+    .fixposition .teamcontainer .wrappers {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      justify-content: space-around; }
+      .fixposition .teamcontainer .wrappers .teamwrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px; }
+        .fixposition .teamcontainer .wrappers .teamwrapper img {
+          width: 350px;
+          border-radius: 50%; }
+        .fixposition .teamcontainer .wrappers .teamwrapper .desc {
+          width: 350px; }
+          .fixposition .teamcontainer .wrappers .teamwrapper .desc h3 {
+            font-size: 25px; }
+          .fixposition .teamcontainer .wrappers .teamwrapper .desc p {
+            margin-top: 50px;
+            font-size: 20px; }
 
 /*# sourceMappingURL=style.css.map */
