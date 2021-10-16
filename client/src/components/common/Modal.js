@@ -56,10 +56,9 @@ function Modal({ setModalOpen }) {
       search_start: search_info.search_start,
       search_end: search_info.search_end,
     };
-
     console.log(body);
     return axios
-      .post(`${END_POINT}/???`, body, {
+      .post(`${END_POINT}/download`, body, {
         headers: { "Content-Type": "application/json" },
         withCredentials: true,
       })
