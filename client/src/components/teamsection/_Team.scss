@@ -25,14 +25,20 @@
         .desc {
           width: 350px;
           h3 {
-            font-size: 25px;
+            margin-top: 30px;
+            font-style: italic;
+            font-size: 40px;
+            text-align: center;
           }
 
           .channel {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-around;
           }
 
           p {
-            margin-top: 50px;
+            margin-top: 30px;
             font-size: 20px;
           }
         }

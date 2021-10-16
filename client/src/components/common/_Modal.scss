@@ -1,0 +1,82 @@
+.modalcontainer {
+  z-index: 700;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(63, 65, 80, 0.5);
+  @include flexbox;
+  .modalwrapper {
+    z-index: 710;
+    position: relative;
+    width: 550px;
+    height: 566px;
+    background: #ffffff;
+    box-shadow: 0px 4px 20px rgba(63, 65, 80, 0.3);
+    border-radius: 24px;
+    @include column-flexbox;
+
+    @include mobile-only {
+      border-radius: 0;
+      width: 100vw;
+      height: 100vh;
+    }
+    .modalheader {
+      background: transparent;
+      position: absolute;
+      width: 100%;
+      height: 100px;
+      left: 0;
+      top: 0;
+      text-align: center;
+      font-weight: 800;
+      @include text-style(24, $main);
+      font-style: italic;
+    }
+    .backbtn {
+      background: transparent;
+      width: 39px;
+      height: 39px;
+      position: absolute;
+      top: 10px;
+      right: 14px;
+      cursor: pointer;
+    }
+    .inputlarge {
+      width: 296px;
+      height: 55px;
+      background: $white;
+      border: 1px solid $border;
+      border-radius: 8px;
+      margin-bottom: 8px;
+      text-align: center;
+      &::placeholder {
+        font-weight: normal;
+        @include text-style-16;
+        color: $border;
+      }
+    }
+    .search_term {
+      width: 296px;
+      @include flexbox;
+      background: transparent;
+      .date_input_wrapper {
+        display: flex;
+        align-items: center;
+        height: 38px;
+        margin-bottom: 8px;
+        background: transparent;
+        .date_input {
+          width: 138px;
+          height: 38px;
+          background: #ffffff;
+          border: 1px solid $border;
+          border-radius: 4px;
+          @include flexbox;
+          color: #d9d9d9;
+        }
+      }
+    }
+  }
+}

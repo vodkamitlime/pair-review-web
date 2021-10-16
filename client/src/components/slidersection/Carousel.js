@@ -42,6 +42,7 @@ function Carousel() {
               alignItems: "center",
               justifyContent: "center",
             }}
+            key={`image${idx}`}
           >
             <img
               src={img}

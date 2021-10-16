@@ -14,10 +14,10 @@
     .wrappers {
       @include column-flexbox;
       .aboutwrapper {
-        margin-top: 50px;
+        margin-top: 30px;
         display: flex;
-        justify-content: space-between;
-        width: 864px;
+        justify-content: space-around;
+        width: 100%;
         .text {
           width: 350px;
           h3 {
@@ -25,7 +25,7 @@
           }
 
           p {
-            margin-top: 50px;
+            margin-top: 10px;
             font-size: 20px;
           }
         }

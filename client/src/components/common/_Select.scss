@@ -1,0 +1,26 @@
+.singleselectcontent,
+.multiselectcontent {
+  background: transparent;
+  margin: 0 auto;
+  width: 296px;
+  height: 36px;
+  margin-bottom: 8px;
+  @include flexbox;
+  @include mobile-only() {
+    max-width: 360px;
+    width: 95%;
+  }
+  .subjectwrapper {
+    min-width: 32px;
+    margin-right: 32px;
+    font-weight: bold;
+    color: $main;
+    @include mobile-only() {
+      margin-right: 20px;
+    }
+  }
+  .basicsingle,
+  .basicmulti {
+    width: 200px;
+  }
+}
