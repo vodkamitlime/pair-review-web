@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Menu from "./Menu";
+import Modal from "./Modal";
 
-function Header() {
+function Header({ modalOpen, setModalOpen }) {
   return (
     <>
       <nav className="headerfix stopdragging">
@@ -33,6 +34,7 @@ function Header() {
           })}
         </div>
       </nav>
+      {modalOpen ? <Modal setModalOpen={setModalOpen} /> : null}{" "}
     </>
   );
 }

@@ -497,7 +497,7 @@ select::-ms-expand {
   justify-content: center;
   justify-content: space-between;
   width: 100%;
-  z-index: 1000; }
+  z-index: 500; }
   .headerfix .logowrapper {
     display: inline-block;
     display: flex;
@@ -579,16 +579,16 @@ select::-ms-expand {
       align-items: center;
       justify-content: center; }
       .fixposition .aboutcontainer .wrappers .aboutwrapper {
-        margin-top: 50px;
+        margin-top: 30px;
         display: flex;
-        justify-content: space-between;
-        width: 864px; }
+        justify-content: space-around;
+        width: 100%; }
         .fixposition .aboutcontainer .wrappers .aboutwrapper .text {
           width: 350px; }
           .fixposition .aboutcontainer .wrappers .aboutwrapper .text h3 {
             font-size: 25px; }
           .fixposition .aboutcontainer .wrappers .aboutwrapper .text p {
-            margin-top: 50px;
+            margin-top: 10px;
             font-size: 20px; }
 
 .fixposition {
@@ -621,9 +621,158 @@ select::-ms-expand {
         .fixposition .teamcontainer .wrappers .teamwrapper .desc {
           width: 350px; }
           .fixposition .teamcontainer .wrappers .teamwrapper .desc h3 {
-            font-size: 25px; }
+            margin-top: 30px;
+            font-style: italic;
+            font-size: 40px;
+            text-align: center; }
+          .fixposition .teamcontainer .wrappers .teamwrapper .desc .channel {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-around; }
           .fixposition .teamcontainer .wrappers .teamwrapper .desc p {
-            margin-top: 50px;
+            margin-top: 30px;
             font-size: 20px; }
+
+.footercontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  margin-top: 100px;
+  height: 150px;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 800; }
+
+.modalcontainer {
+  z-index: 700;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(63, 65, 80, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .modalcontainer .modalwrapper {
+    z-index: 710;
+    position: relative;
+    width: 550px;
+    height: 566px;
+    background: #ffffff;
+    box-shadow: 0px 4px 20px rgba(63, 65, 80, 0.3);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    @media screen and (max-width: 767px) {
+      .modalcontainer .modalwrapper {
+        border-radius: 0;
+        width: 100vw;
+        height: 100vh; } }
+    .modalcontainer .modalwrapper .modalheader {
+      background: transparent;
+      position: absolute;
+      width: 100%;
+      height: 100px;
+      left: 0;
+      top: 0;
+      text-align: center;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 34px;
+      letter-spacing: -0.01em;
+      color: #5d5fef;
+      font-style: italic; }
+    .modalcontainer .modalwrapper .backbtn {
+      background: transparent;
+      width: 39px;
+      height: 39px;
+      position: absolute;
+      top: 10px;
+      right: 14px;
+      cursor: pointer; }
+    .modalcontainer .modalwrapper .inputlarge {
+      width: 296px;
+      height: 55px;
+      background: #f2f2f2;
+      border: 1px solid #d9d9d9;
+      border-radius: 8px;
+      margin-bottom: 8px;
+      text-align: center; }
+      .modalcontainer .modalwrapper .inputlarge::placeholder {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.01em;
+        color: #d9d9d9; }
+    .modalcontainer .modalwrapper .search_term {
+      width: 296px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent; }
+      .modalcontainer .modalwrapper .search_term .date_input_wrapper {
+        display: flex;
+        align-items: center;
+        height: 38px;
+        margin-bottom: 8px;
+        background: transparent; }
+        .modalcontainer .modalwrapper .search_term .date_input_wrapper .date_input {
+          width: 138px;
+          height: 38px;
+          background: #ffffff;
+          border: 1px solid #d9d9d9;
+          border-radius: 4px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #d9d9d9; }
+
+.commonbutton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  height: 55px;
+  padding: 8px;
+  width: 296px; }
+
+.singleselectcontent,
+.multiselectcontent {
+  background: transparent;
+  margin: 0 auto;
+  width: 296px;
+  height: 36px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media screen and (max-width: 767px) {
+    .singleselectcontent,
+    .multiselectcontent {
+      max-width: 360px;
+      width: 95%; } }
+  .singleselectcontent .subjectwrapper,
+  .multiselectcontent .subjectwrapper {
+    min-width: 32px;
+    margin-right: 32px;
+    font-weight: bold;
+    color: #5d5fef; }
+    @media screen and (max-width: 767px) {
+      .singleselectcontent .subjectwrapper,
+      .multiselectcontent .subjectwrapper {
+        margin-right: 20px; } }
+  .singleselectcontent .basicsingle,
+  .singleselectcontent .basicmulti,
+  .multiselectcontent .basicsingle,
+  .multiselectcontent .basicmulti {
+    width: 200px; }
 
 /*# sourceMappingURL=style.css.map */
