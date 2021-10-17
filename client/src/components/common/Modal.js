@@ -50,8 +50,8 @@ function Modal({ setModalOpen }) {
 
   function postHandler(e) {
     let body = {
-      user_email: Email,
-      user_password: Password,
+      email: Email,
+      password: Password,
       extension: extension,
       search_start: search_info.search_start,
       search_end: search_info.search_end,
