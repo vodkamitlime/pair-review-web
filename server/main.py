@@ -28,3 +28,14 @@ def download_file(user: User, background_tasks: BackgroundTasks):
 
     # download_emails(user.email, user.password, user.extension)
     return FileResponse(path=f'./public/{user.email}.csv')
+
+
+
+# from fastapi import FastAPI, UploadFile, File
+
+# app = FastAPI()
+
+# @app.post("/file")
+# async def upload_file(file: UploadFile = File(...)):
+#     # Do here your stuff with the file
+#     return {"filename": file.filename}
