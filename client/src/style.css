@@ -520,6 +520,7 @@ select::-ms-expand {
     color: #5d5fef; }
 
 .carouselcon {
+  height: calc(100vh - 150px);
   margin-top: 150px;
   padding: 0 100px; }
   .carouselcon img {
@@ -568,6 +569,7 @@ select::-ms-expand {
   align-items: center;
   justify-content: center; }
   .fixposition .aboutcontainer {
+    height: calc(100vh - 150px);
     width: 1071px; }
     .fixposition .aboutcontainer h2 {
       font-style: italic;

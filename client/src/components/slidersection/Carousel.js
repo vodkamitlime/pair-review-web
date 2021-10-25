@@ -5,7 +5,7 @@ import img2 from "../../assets/carouselimg2.png";
 
 const images = [img1, img2];
 
-function Carousel() {
+function Carousel({ clickHandler }) {
   const NextArrow = ({ onClick }) => {
     return <div className="arrow next" onClick={onClick}></div>;
   };
@@ -32,7 +32,7 @@ function Carousel() {
   };
 
   return (
-    <div className="carouselcon">
+    <section className="carouselcon">
       <Slider {...settings}>
         {images.map((img, idx) => (
           <div
@@ -56,7 +56,12 @@ function Carousel() {
           </div>
         ))}
       </Slider>
-    </div>
+      <div className="startbutton">
+        <div className="text" onClick={() => clickHandler()}>
+          Start Now
+        </div>
+      </div>
+    </section>
   );
 }
 
