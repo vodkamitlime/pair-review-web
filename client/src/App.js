@@ -7,15 +7,16 @@ import Footer from "./components/common/Footer";
 
 function App() {
   const [modalOpen, setModalOpen] = useState(false);
-
   useEffect(() => {
     let section = document.getElementsByTagName("section");
 
     let pageNum = 0;
+
     let totalNum = section.length;
 
     function pageChangeFunc() {
-      console.log(pageNum);
+      // console.log(pageNum); section에 pagenum으로 접근해서 css 붙여야 겠는걸?
+      section[pageNum].setAttribute("class", "active");
     }
 
     window.addEventListener("scroll", function (event) {
@@ -30,7 +31,7 @@ function App() {
               section[i].offsetHeight
         ) {
           pageNum = i;
-          console.log(i);
+          // console.log(i);
           break;
         }
         // if(scroll > section[i].offsetTop &&
