@@ -1,9 +1,10 @@
 import aboutimg1 from "../../assets/aboutimg1.png";
 import aboutimg2 from "../../assets/aboutimg2.png";
 
-function About() {
+function About({ pageNum }) {
   return (
     <div className="fixposition">
+      {pageNum === 1 ? "트루" : "뽈스"}
       <section className="aboutcontainer">
         <h2>About</h2>
         <div className="wrappers">
